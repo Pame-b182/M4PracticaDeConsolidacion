@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Presupuesto App</title>
+</head>
+
+<body>
+    <!-- Inicio título -->
+    <div class="container m-2 p-1 text-center text-light">
+        <h1>Presupuesto APP</h1>
+    </div><!-- Fin título -->
+    <!-- Inicio big container -->
+    <div class="container">
+        <div class="row">
+            <!-- Inicio forms -->
+        <div class="col-md-6">
+            <form class="bg-success-subtle border border-success border-4 rounded-4 m-4 p-3">
+                <div class="row mb-3">
+                    <label for="inputIngresos" class="col-sm-12 col-form-label"><strong>Ingresa Tu Presupuesto</strong></label>
+                    <div class="col-sm-12">
+                        <input type="number" class="form-control" id="inputIngresos">
+                    </div>
+                </div>
+                <button id="btnCalcular" type="submit" class="btn btn-outline-success border-2">Calcular</button>
+            </form><!-- Fin form Ingresos -->
+            <!-- Inicio form Gastos -->
+            <form class="bg-danger-subtle border border-danger border-4 rounded-4 m-4 p-3">
+                <div class="row mb-3">
+                    <label for="inputNombreGasto" class="col-sm-12 col-form-label"><strong>Ingresa el Nombre del Gasto</strong></label>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="inputNombreGasto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputMontoGasto" class="col-sm-12 col-form-label"><strong>Ingresa el Monto del Gasto</strong></label>
+                    <div class="col-sm-12">
+                        <input type="number" class="form-control" id="inputMontoGasto">
+                    </div>
+                </div>
+                <button id="btnAñadirGasto" type="submit" class="btn btn-outline-danger border-2">Añadir Gasto</button>
+            </form><!-- Fin form Gastos -->
+        </div><!-- Fin forms -->
+        <!-- Inicio tablas -->
+        <div class="col-md-6">
+            <!-- Inicio tabla Presupuesto -->
+            <table id="tablaPresupuesto" class="table mt-4 bg-light rounded-3 border-light">
+                <thead>
+                  <tr>
+                    <th scope="col">PRESUPUESTO</th>
+                    <th scope="col">GASTOS</th>
+                    <th scope="col">SALDO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="tdPresupuesto"><!-- Inyección monto desde javascript --></td>
+                    <td id="tdGastos"><!-- Inyección monto desde javascript --></td>
+                    <td id="tdSaldo"><!-- Inyección monto desde javascript --></td>
+                  </tr>
+                </tbody>
+              </table><!-- Fin tabla presupuesto -->
+            <!-- Inicio tabla Gastos -->
+            <table class="table p-2 bg-light rounded-3 border-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">GASTO</th>
+                    <th scope="col">MONTO</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="tbodyGastos">
+                    <!-- Inyección de los gastos desde Javascript -->
+                </tbody>
+              </table><!-- Fin tabla Gastos -->
+        </div><!-- Fin tablas -->
+        </div>
+    </div><!-- Fin big container -->
+
+
+
+
+    <script src="https://kit.fontawesome.com/51d35e7ec0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

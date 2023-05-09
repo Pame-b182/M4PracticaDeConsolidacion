@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://emprendedor.com/wp-content/uploads/2021/12/como-hacer-un-presupuesto.jpg");
+    background-size: cover;
+}
+h1{
+    margin-left: 140px;
+    font-weight: bold;
+}
+#tablaPresupuesto{
+    margin-bottom: 22% !important;
+}
+
